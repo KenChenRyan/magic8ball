@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <!-- CSS only -->
+    <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Ubuntu">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title> Magic 8 Ball </title>
+    <script>
+      function magic() {
+        var answer = Math.floor(1+(Math.random()*5));
+        var bottomsup = Math.floor(Math.random()*2);
+        var gifDisplay;
+        var element = document.getElementById("magic");
+        if (document.getElementById("text").checked == true) {
+          gifDisplay = 0;
+        }
+        else if (document.getElementById("gif").checked == true) {
+          gifDisplay = 1;
+        } else {
+          alert("User hasn't made a selection")
+          gifDisplay = 2;
+          return;
+        }
+        if (gifDisplay == 1) {
+          element.style.lineHeight = "0px";
+          element.style.textAlign = "center"
+          switch(answer) {
+            case 1:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c1.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 2:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c2.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 3:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c3.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 4:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c4.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 5:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c5.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 6:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c6.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 7:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c7.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 8:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c8.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 9:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c9.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 10:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c10.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 11:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c11.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 12:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c12.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 13:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c13.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 14:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c14.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 15:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c15.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 16:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c17.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 17:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c17.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 18:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c18.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 19:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c19.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            case 20:
+              element.innerHTML = "<img src = \"assets/a.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/b.gif\">";
+              element.innerHTML += "<img src = \"assets/c20.gif\">";
+              element.innerHTML += "<img src = \"assets/d.gif\"><br>";
+              element.innerHTML += "<img src = \"assets/e.gif\">";
+              break;
+            }
+        } else if (gifDisplay == 0) {
+          element.style.lineHeight = "normal";
+          element.style.textAlign = "left"
+          switch(answer) {
+            case 1:
+              if (bottomsup == 0) {
+                element.innerHTML =  "           ___<br>"
+                element.innerHTML += "          /   \\<br>"
+                element.innerHTML += "         /     \\<br>"
+                element.innerHTML += "        /  ASK  \\<br>"
+                element.innerHTML += "       /  AGAIN  \\<br>"
+                element.innerHTML += "      /   LATER   \\<br>"
+                element.innerHTML += "      \\___________/<br>"
+              } else if(bottomsup == 1) {
+                element.innerHTML =  "        ___________<br>"
+                element.innerHTML += "       /           \\<br>"
+                element.innerHTML += "       \\    ASK    /<br>"
+                element.innerHTML += "        \\  AGAIN  /<br>"
+                element.innerHTML += "         \\ LATER /<br>"
+                element.innerHTML += "          \\     /<br>"
+                element.innerHTML += "           \\___/<br>"
+              }
+              break;
+            case 2:
+              if(bottomsup == 0) {
+                element.innerHTML =  "           ___<br>"
+                element.innerHTML += "          /   \\<br>"
+                element.innerHTML += "         /     \\<br>"
+                element.innerHTML += "        /   |   \\<br>"
+                element.innerHTML += "       /   YES   \\<br>"
+                element.innerHTML += "      /   /   \\   \\<br>"
+                element.innerHTML += "      \\___________/<br>"
+              } else if (bottomsup == 1) {
+                element.innerHTML =  "        ___________<br>"
+                element.innerHTML += "       /           \\<br>"
+                element.innerHTML += "       \\   \\   /   /<br>"
+                element.innerHTML += "        \\   YES   /<br>"
+                element.innerHTML += "         \\   |   /<br>"
+                element.innerHTML += "          \\     /<br>"
+                element.innerHTML += "           \\___/<br>"
+              }
+              break;
+              case 3:
+                if(bottomsup == 0) {
+                  element.innerHTML =  "           ___<br>"
+                  element.innerHTML += "          /   \\<br>"
+                  element.innerHTML += "         / MY  \\<br>"
+                  element.innerHTML += "        /SOURCES\\<br>"
+                  element.innerHTML += "       /   SAY   \\<br>"
+                  element.innerHTML += "      /    NO     \\<br>"
+                  element.innerHTML += "      \\___________/<br>"
+                } else if (bottomsup == 1) {
+                  element.innerHTML =  "        ___________<br>"
+                  element.innerHTML += "       /           \\<br>"
+                  element.innerHTML += "       \\   MY      /<br>"
+                  element.innerHTML += "        \\ SOURCES /<br>"
+                  element.innerHTML += "         \\  SAY  /<br>"
+                  element.innerHTML += "          \\ NO  /<br>"
+                  element.innerHTML += "           \\___/<br>"
+                }
+              break;
+              case 4:
+                if(bottomsup == 0) {
+                  element.innerHTML =  "           _____<br>"
+                  element.innerHTML += "          /     \\<br>"
+                  element.innerHTML += "         /YOU MAY\\<br>"
+                  element.innerHTML += "        /  RELY   \\<br>"
+                  element.innerHTML += "       /    ON     \\<br>"
+                  element.innerHTML += "      /      IT     \\<br>"
+                  element.innerHTML += "      \\_____________/<br>"
+                } else if (bottomsup == 1) {
+                  element.innerHTML =  "        ___________<br>"
+                  element.innerHTML += "       /           \\<br>"
+                  element.innerHTML += "       \\  YOU MAY  /<br>"
+                  element.innerHTML += "        \\  RELY   /<br>"
+                  element.innerHTML += "         \\  ON   /<br>"
+                  element.innerHTML += "          \\ IT  /<br>"
+                  element.innerHTML += "           \\___/<br>"
+                }
+              case 5:
+                if(bottomsup == 0) {
+                  element.innerHTML =  "           ___<br>"
+                  element.innerHTML += "          /   \\<br>"
+                  element.innerHTML += "         /     \\<br>"
+                  element.innerHTML += "        /       \\<br>"
+                  element.innerHTML += "       /   YES   \\<br>"
+                  element.innerHTML += "      / DEFINITELY\\<br>"
+                  element.innerHTML += "      \\___________/<br>"
+                } else if (bottomsup == 1) {
+                  element.innerHTML =  "        ___________<br>"
+                  element.innerHTML += "       /    YES    \\<br>"
+                  element.innerHTML += "       \\DEFINITELY /<br>"
+                  element.innerHTML += "        \\         /<br>"
+                  element.innerHTML += "         \\       /<br>"
+                  element.innerHTML += "          \\     /<br>"
+                  element.innerHTML += "           \\___/<br>"
+                }
+              case 6:
+                if (bottomsup == 0) {
+                  element.innerHTML =  "           ___<br>"
+                  element.innerHTML += "          /   \\<br>"
+                  element.innerHTML += "         /     \\<br>"
+                  element.innerHTML += "        /  VERY \\<br>"
+                  element.innerHTML += "       / DOUBTFUL\\<br>"
+                  element.innerHTML += "      /           \\<br>"
+                  element.innerHTML += "      \\___________/<br>"
+                } else if(bottomsup == 1) {
+                  element.innerHTML =  "        ___________<br>"
+                  element.innerHTML += "       /           \\<br>"
+                  element.innerHTML += "       \\   VERY    /<br>"
+                  element.innerHTML += "        \\ DOUBTFUL/<br>"
+                  element.innerHTML += "         \\       /<br>"
+                  element.innerHTML += "          \\     /<br>"
+                  element.innerHTML += "           \\___/<br>"
+                }
+                break;
+              case 7:
+                if(bottomsup == 0) {
+                  element.innerHTML =  "           ___<br>"
+                  element.innerHTML += "          /   \\<br>"
+                  element.innerHTML += "         /     \\<br>"
+                  element.innerHTML += "        / SIGNS \\<br>"
+                  element.innerHTML += "       /POINT TO \\<br>"
+                  element.innerHTML += "      /   YES     \\<br>"
+                  element.innerHTML += "      \\___________/<br>"
+                } else if (bottomsup == 1) {
+                  element.innerHTML =  "        ___________<br>"
+                  element.innerHTML += "       /           \\<br>"
+                  element.innerHTML += "       \\  SIGNS    /<br>"
+                  element.innerHTML += "        \\ POINT TO/<br>"
+                  element.innerHTML += "         \\  YES  /<br>"
+                  element.innerHTML += "          \\     /<br>"
+                  element.innerHTML += "           \\___/<br>"
+                }
+                break;
+                case 8:
+                  if(bottomsup == 0) {
+                    element.innerHTML =  "           ____<br>"
+                    element.innerHTML += "          /    \\<br>"
+                    element.innerHTML += "         /BETTER\\<br>"
+                    element.innerHTML += "        /NOT TELL\\<br>"
+                    element.innerHTML += "       / YOU NOW  \\<br>"
+                    element.innerHTML += "      /            \\<br>"
+                    element.innerHTML += "      \\____________/<br>"
+                  } else if (bottomsup == 1) {
+                    element.innerHTML =  "        ___________<br>"
+                    element.innerHTML += "       /           \\<br>"
+                    element.innerHTML += "       \\  BETTER   /<br>"
+                    element.innerHTML += "        \\NOT TELL /<br>"
+                    element.innerHTML += "         \\YOU NOW/<br>"
+                    element.innerHTML += "          \\     /<br>"
+                    element.innerHTML += "           \\___/<br>"
+                  }
+                break;
+                case 9:
+                  if(bottomsup == 0) {
+                    element.innerHTML =  "           _____<br>"
+                    element.innerHTML += "          /     \\<br>"
+                    element.innerHTML += "         /CANNOT \\<br>"
+                    element.innerHTML += "        / PREDICT \\<br>"
+                    element.innerHTML += "       /    NOW    \\<br>"
+                    element.innerHTML += "      /             \\<br>"
+                    element.innerHTML += "      \\_____________/<br>"
+                  } else if (bottomsup == 1) {
+                    element.innerHTML =  "        ___________<br>"
+                    element.innerHTML += "       /           \\<br>"
+                    element.innerHTML += "       \\  CANNOT   /<br>"
+                    element.innerHTML += "        \\ PREDICT /<br>"
+                    element.innerHTML += "         \\  NOW  /<br>"
+                    element.innerHTML += "          \\     /<br>"
+                    element.innerHTML += "           \\___/<br>"
+                  }
+                case 10:
+                  if(bottomsup == 0) {
+                    element.innerHTML =  "           ___<br>"
+                    element.innerHTML += "          /   \\<br>"
+                    element.innerHTML += "         /     \\<br>"
+                    element.innerHTML += "        /WITHOUT\\<br>"
+                    element.innerHTML += "       /     A   \\<br>"
+                    element.innerHTML += "      /    DOUBT  \\<br>"
+                    element.innerHTML += "      \\___________/<br>"
+                  } else if (bottomsup == 1) {
+                    element.innerHTML =  "        ___________<br>"
+                    element.innerHTML += "       /           \\<br>"
+                    element.innerHTML += "       \\ WITHOUT   /<br>"
+                    element.innerHTML += "        \\   A     /<br>"
+                    element.innerHTML += "         \\ DOUBT /<br>"
+                    element.innerHTML += "          \\     /<br>"
+                    element.innerHTML += "           \\___/<br>"
+                  }
+            }
+          }
+        }
+    </script>
+    <style>
+      body {
+        font-family: "Ubuntu", serif;
+      }
+      header {
+        background-color: Black;
+        color: White;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        left: 0;
+      }
+      footer {
+        background-color: Black;
+        color: Yellow;
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .container {
+        border: thin solid;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        background-color: lightblue;
+      }
+      #magic-container {
+
+      }
+    </style>
+  </head>
+  <body>
+    <header> Magic 8 Ball</header>
+    <div class = "container">
+      <pr>
+        Our 8-ball reaches into the future to find the answers to your questions.
+        It knows what will be, and is willing to share this with you.
+        <br>
+        Just think of a question that can be answered "Yes" or "No", concentrate very,
+        very hard, and click on the "Ask" button. Then let our 8-ball show you the way!
+      </pr>
+    </div>
+    <div class = "container" id = "magic-container">
+      <pre id = "magic"> </pre>
+      <input type = "radio" id = "text" name = "magic_display" value = "text">
+      <label for = "text"> Text </label>
+      <input type = "radio" id = "gif" name = "magic_display" vaue = "gif">
+      <label for = "gif"> GIF </label>
+      <button id = "magic_button" type="button" onclick="magic()"> Click here to recieve your answer</button>
+    </div>
+    <footer>
+      Created 2021
+    </footer>
+  </body>
+</html>
